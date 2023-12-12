@@ -11,3 +11,6 @@ modules.order
 *.o.d
 *.deb
 rcio-dkms-private_qtc.*
+
+.idea
+cmake-build-*
