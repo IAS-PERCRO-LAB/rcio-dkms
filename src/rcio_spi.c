@@ -162,17 +162,16 @@ static int rcio_spi_probe(struct spi_device *spi)
     return 0;
 }
 
-static int rcio_spi_remove(struct spi_device *spi)
+static void rcio_spi_remove(struct spi_device *spi)
 {
     int ret = rcio_remove(&st);
 
     if (ret < 0) {
         dev_err(&spi->dev, "rcio_remove=%d", ret);
-        return ret;
+        return;
     }
 
     kfree(buffer);
-    return ret;
 }
 
 static const struct spi_device_id rcio_id[] = {
