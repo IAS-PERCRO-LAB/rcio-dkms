@@ -3,8 +3,9 @@ This is a kernel module for Raspberry Linux allowing it to communicate with Navi
 
 ## TODOs
 Current ToDo list to make everything work on kernel 6.x (Debian 12 Bookworm):
-[x] minor code fixes due to variable type changes;
-[ ] migrate PWM module to non-legacy kernel API calls.
+
+- [x] minor code fixes due to variable type changes;
+- [ ] migrate PWM module to non-legacy kernel API calls.
 
 
 # Building
